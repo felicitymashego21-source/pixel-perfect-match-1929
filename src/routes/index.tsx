@@ -1,4 +1,16 @@
 import { createFileRoute } from "@tanstack/react-router";
+import essPdf from "@/assets/KwandileMashego_GoogleAIEssential.pdf.asset.json";
+import essImg from "@/assets/KwandileMashego_GoogleAIEssential.jpg.asset.json";
+import respPdf from "@/assets/KwandileMashego_UseAIresponsibly.pdf.asset.json";
+import respImg from "@/assets/KwandileMashego_UseAIresponsibly.jpg.asset.json";
+import promptPdf from "@/assets/KwandileMashego-DiscoverTheArtofPrompting.pdf.asset.json";
+import promptImg from "@/assets/KwandileMashego-DiscoverTheArtofPrompting.jpg.asset.json";
+
+const certs = [
+  { title: "Google AI Essentials", sub: "Specialization · 5 courses", date: "Oct 7, 2026", pdf: essPdf.url, img: essImg.url },
+  { title: "Use AI Responsibly", sub: "Google · Coursera", date: "Oct 6, 2026", pdf: respPdf.url, img: respImg.url },
+  { title: "Discover the Art of Prompting", sub: "Google · Coursera", date: "Oct 7, 2026", pdf: promptPdf.url, img: promptImg.url },
+];
 
 export const Route = createFileRoute("/")({
   head: () => ({
